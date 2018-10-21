@@ -4,7 +4,9 @@
   "description": "Example of RESTful API using Node.js, Express and Typescript. For the database, MongoDB is used.",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ts": "tsc -w",
+    "server": "nodemon ./build/index.js",
+    "start": "tsc && node ./build/index.js"
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,7 @@
     "@types/mongoose": "^5.2.19",
     "@types/morgan": "^1.7.35",
     "@types/node": "^10.12.0",
+    "nodemon": "^1.18.4",
     "typescript": "^3.1.3"
   }
 }
